@@ -21,7 +21,8 @@ class Student
         grade TEXT
         )
     SQL
-    DB[:conn].execute(sql) 
+    DB[:conn].execute(sql)
+    
   end
 
   def self.drop_table
@@ -48,5 +49,7 @@ class Student
     sql = "SELECT * FROM students" 
     DB[:conn].execute(sql)
   end
+
+  
 
 end
